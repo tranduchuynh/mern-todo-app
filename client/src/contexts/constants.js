@@ -1,4 +1,4 @@
-export const apiUrl = process.env.NODE_ENV !== 'production' ? 'http://localhost:5000/api': 'some deployed url';
+export const apiUrl = process.env.NODE_ENV !== 'production' ? 'https://fathomless-falls-04415.herokuapp.com/api': 'some deployed url';
 
 export const LOCAL_STORAGE_TOKEN_NAME = 'mern-token';
 
