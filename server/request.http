@@ -1,0 +1,53 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "huynhtran",
+  "password": "1234"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "huynhtran",
+  "password": "1234"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDcyYjc0MGVkZDQyYzg5ODM0ZGZkNzYiLCJpYXQiOjE2MTgyMDQxOTd9.VVaw8sckIrprxboseQmoIyhQRF_-1bD_N5tJjCm-9n0
+
+{
+  "title": "Mern stack",
+  "description": "Mern stack",
+  "url": "react.com",
+  "status": "LEARNED"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDcyYjc0MGVkZDQyYzg5ODM0ZGZkNzYiLCJpYXQiOjE2MTgxMzMxNjl9.rRoqBr8093Yx4YhEGvWj9lhVhQ2GuM16vP794td4o28
+
+###
+PUT http://localhost:5000/api/posts/6072c07fea75fb8c254dee86
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDcyYjc0MGVkZDQyYzg5ODM0ZGZkNzYiLCJpYXQiOjE2MTgxMzMxNjl9.rRoqBr8093Yx4YhEGvWj9lhVhQ2GuM16vP794td4o28
+
+{
+  "title": "React",
+  "description": "Reactjs",
+  "url": "react.com",
+  "status": "LEARNING"
+}
+
+###
+DELETE http://localhost:5000/api/posts/6072c07fea75fb8c254dee86
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDcyYjc0MGVkZDQyYzg5ODM0ZGZkNzYiLCJpYXQiOjE2MTgxMzMxNjl9.rRoqBr8093Yx4YhEGvWj9lhVhQ2GuM16vP794td4o28
